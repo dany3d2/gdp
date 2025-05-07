@@ -73,7 +73,7 @@
 							<div class="col-lg-12">
 								<nav class="navbar navbar-expand-lg">
 									<a class="navbar-brand logo" href="index.html">
-									<img id="logo-img" class="img-fluid" src="images/logo.png" alt="">
+										<img id="logo-img" class="img-fluid" src="images/logo.png" alt="">
 									</a>
 									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
 									</button>
@@ -85,7 +85,7 @@
 											<li class="nav-item dropdown">
 												<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nosotros</a>
 												<ul class="dropdown-menu">
-													<li><a href="about-us.html">¿Quiénes Somos</a></li>
+													<li><a href="about-us.html">¿Quiénes Somos?</a></li>
 													<li><a href="faq.html">Faq</a></li>
 													<li><a href="team-single.html">Nuestro Equipo</a></li>
 												</ul>
@@ -268,7 +268,7 @@
 									<h1 class="text-white mb-3 animated10">Energía que  <span>Impulsa tu vida</span></h1>
 									<p class="lead text-white animated5 mb-3">Somos tu aliado confiable en gas LP para el hogar y la industria.</p>
 									<a class="btn btn-theme btn-radius animated7" href="about-us.html">Saber más</a>
-									<a class="btn btn-border btn-radius animated6" href="contact-1.html">Pedir ahora</a>
+									<button class="btn btn-border btn-radius animated6 btn-booking">Pedir ahora</button>
 								</div>
 							</div>
 						</div>
@@ -283,7 +283,7 @@
 									<h1 class="text-white mb-3 animated8">Entrega <span>rápida, segura y puntual</span></h1>
 									<p class="lead text-white animated5 mb-3">Llevamos gas LP a tu puerta en tiempo récord, sin complicaciones.</p>
 									<a class="btn btn-theme btn-radius animated7" href="about-us.html">Saber más</a>
-									<a class="btn btn-border btn-radius animated6" href="contact-1.html">Pedir ahora</a>
+									<button class="btn btn-border btn-radius animated6 btn-booking">Pedir ahora</button>
 								</div>
 							</div>
 						</div>
@@ -298,7 +298,7 @@
 									<h1 class="text-white mb-3 animated8">Pide tu gas  <span>desde tu celular</span></h1>
 									<p class="lead text-white animated5 mb-3">WhatsApp, app o web… elige cómo y nosotros hacemos el resto.</p>
 									<a class="btn btn-theme btn-radius animated7" href="about-us.html">Saber más</a>
-									<a class="btn btn-border btn-radius animated6" href="contact-1.html">Pedir ahora</a>
+									<button class="btn btn-border btn-radius animated6 btn-booking">Pedir ahora</button>
 								</div>
 								</div>
 							</div>
@@ -313,7 +313,7 @@
 									<h1 class="text-white mb-3 animated10"> Instalaciones seguras, <span>operadas por expertos</span></h1>
 									<p class="lead text-white animated5 mb-3">Personal capacitado y equipo certificado para cuidar tu hogar y tu negocio.</p>
 									<a class="btn btn-theme btn-radius animated7" href="about-us.html">Saber más</a>
-									<a class="btn btn-border btn-radius animated6" href="contact-1.html">Pedir ahora</a>
+									<button class="btn btn-border btn-radius animated6 btn-booking">Pedir ahora</button>
 								</div>
 								</div>
 							</div>
@@ -328,7 +328,7 @@
 										<h1 class="text-white mb-3 animated8">Energía limpia con  <span>visión de futuro</span></h1>
 										<p class="lead text-white animated5 mb-3">Apostamos por tecnología, eficiencia y cuidado del medio ambiente.</p>
 										<a class="btn btn-theme btn-radius animated7" href="about-us.html">Saber más</a>
-										<a class="btn btn-border btn-radius animated6" href="contact-1.html">Pedir ahora</a>
+										<button class="btn btn-border btn-radius animated6 btn-booking">Pedir ahora</button>
 									</div>
 								</div>
 							</div>
@@ -1625,36 +1625,52 @@
 
 				<!-- Tipo de pedido -->
 				<div class="mb-3">
-				  <label class="form-label">Tipo de pedido:</label>
-				  <div class="form-check">
-					<input class="form-check-input" type="radio" name="tipo" value="cilindro" id="cilindro" checked onclick="mostrarOpciones()">
-					<label class="form-check-label" for="cilindro">Cilindro</label>
-				  </div>
-				  <div class="form-check">
-					<input class="form-check-input" type="radio" name="tipo" value="estacionario" id="estacionario" onclick="mostrarOpciones()">
-					<label class="form-check-label" for="estacionario">Estacionario</label>
-				  </div>
+					<div class="row">
+						<div class="col-12">
+							<label class="form-label">Tipo de pedido:</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="tipo" value="cilindro" id="cilindro" checked onclick="mostrarOpciones()">
+								<label class="form-check-label" for="cilindro">Cilindro</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="tipo" value="estacionario" id="estacionario" onclick="mostrarOpciones()">
+								<label class="form-check-label" for="estacionario">Estacionario</label>
+							</div>
+						</div>
+					</div>
 				</div>
 		  
 				<!-- Opciones para cilindro -->
 				<div class="mb-3" id="opcionesCilindro">
-				  <label class="form-label">Tamaño del cilindro:</label>
-				  <div class="form-check">
-					<input class="form-check-input" type="radio" name="tamanio" value="10kg" id="10kg">
-					<label class="form-check-label" for="10kg">10kg</label>
-				  </div>
-				  <div class="form-check">
-					<input class="form-check-input" type="radio" name="tamanio" value="20kg" id="20kg">
-					<label class="form-check-label" for="20kg">20kg</label>
-				  </div>
-				  <div class="form-check">
-					<input class="form-check-input" type="radio" name="tamanio" value="30kg" id="30kg">
-					<label class="form-check-label" for="30kg">30kg</label>
-				  </div>
-				  <div class="form-check">
-					<input class="form-check-input" type="radio" name="tamanio" value="no_sabe" id="no_sabe">
-					<label class="form-check-label" for="no_sabe">No lo sé</label>
-				  </div>
+					<div class="row">
+						<div class="col-12">
+							<label class="form-label">Tamaño del cilindro:</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="tamanio" value="10kg" id="10kg">
+								<label class="form-check-label" for="10kg">10kg</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="tamanio" value="20kg" id="20kg">
+								<label class="form-check-label" for="20kg">20kg</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="tamanio" value="30kg" id="30kg">
+								<label class="form-check-label" for="30kg">30kg</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="tamanio" value="no_sabe" id="no_sabe">
+								<label class="form-check-label" for="no_sabe">No lo sé</label>
+							</div>
+						</div>
+					</div>
 				</div>
 		  
 				<!-- Geolocalización -->

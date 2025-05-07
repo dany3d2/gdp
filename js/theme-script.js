@@ -343,12 +343,31 @@ function contactform() {
       $(this).addClass('active');
     }
   });
+
+  $('.btn-booking').bind('click', function () {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $('.contact-form').animate({
+        right: '-450px'
+      });
+    } else {
+      $('.contact-form').animate({
+        right: '0'
+      });
+      $(this).addClass('active');
+    }
+  });
+
+
+
   $('.close-btn').bind('click', function () {
     $('.contact-form').animate({
       right: '-450px'
     });
   });
 };
+
+
 
 /*------------------------------------
   HT ProgressBar
